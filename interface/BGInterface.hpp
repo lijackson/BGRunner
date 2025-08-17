@@ -1,3 +1,5 @@
+#pragma once
+
 #include <array>
 #include <chrono>
 #include <cstdint>
@@ -26,7 +28,7 @@ const GameState INITIAL_STATE = {
 };
 
 // Here's how we're gonna get the ms since epoch
-int get_time() {
+inline int get_time() {
     return std::chrono::duration_cast<std::chrono::milliseconds>
         (std::chrono::system_clock::now().time_since_epoch()).count();
 }
