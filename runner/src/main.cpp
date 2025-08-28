@@ -5,7 +5,7 @@
 int main() {
     BGBot* bot1 = new CLIBot();
     BGBot* bot2 = new CLIBot();
-    GameRunner runner = GameRunner(*bot1, *bot2);
+    GameRunner runner = GameRunner(bot1, bot2);
 
     return 0;
 }
